@@ -1,0 +1,94 @@
+.selectic__wrapper {
+	position: relative;
+}
+
+.selectic__label-box {
+	position: relative;
+}
+
+.selectic__label {
+	padding: 10px;
+	margin-right: 40px;
+	width: 100%;
+
+	display: block;
+	box-sizing: border-box;
+	background-color: #f8f8f8;
+	border: 1px solid #dddddd;
+	overflow: hidden;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.selectic__button {
+	width: 40px;
+	height: 40px;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	cursor: pointer;
+}
+
+.selectic__button::after {
+	content: "";
+
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	border: 5px solid transparent;
+	border-top-color: #444444;
+}
+
+.selectic__list {
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+	border: 1px solid #dddddd;
+	display: none;
+	box-sizing: border-box;
+
+	width: 100%;
+}
+
+.selectic__list_show {
+	display: block;
+}
+
+.selectic__item {
+	padding: 10px;
+
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.selectic__item:hover {
+	background-color: lightgrey;
+}
+
+.selectic__item_selected {
+	background-color: lightgrey;
+	cursor: text;
+}
+
+.selectic__item_disabled {
+	opacity: 0.5;
+	cursor: text;
+	background-color: transparent;
+}
+
+.selectic__item_disabled:hover {
+	background-color: transparent;
+}
+
+.selectic-hide {
+	display: none;
+}
