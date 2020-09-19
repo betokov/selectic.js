@@ -10,7 +10,7 @@ download from github
 
 include ***Selectic.js***
 ```HTML
-<script src="js/selectic-min.js"></script>
+<script src="selectic-min.js"></script>
 ```
 
 include ***Selectic.js*** styles
